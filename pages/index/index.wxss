@@ -1,21 +1,36 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+page,
+.container { height: 100%;}
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
+.page_bg { position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: -1; width: 100%; height: 100%;}
 
-.userinfo-nickname {
-  color: #aaa;
-}
+.head { display: flex; align-items: center; justify-content: space-between; height: 80rpx; padding: 35rpx 30rpx;}
+.head_user { width: 80rpx; height: 80rpx; border-radius: 50%;}
+.head_gift { width: 80rpx; height: 80rpx;}
+.head_mid { display: flex; align-items: center; justify-content: center; width: -webkit-calc(100% - 160rpx); width: calc(100% - 160rpx);}
+.head_mid .mid_tool { width: 60rpx; height: 60rpx; margin-right: 40rpx;}
+.head_mid .mid_icon { width: 60rpx; height: 60rpx;}
 
-.usermotto {
-  margin-top: 200px;
-}
+.body { overflow: hidden; height: -webkit-calc(100% - 290rpx); height: calc(100% - 290rpx);}
+.body_cock { margin-top: 15%; text-align: center;}
+.body_cock .cock_num { display: block; margin-bottom: 30rpx; font-size: 40rpx;}
+.body_cock .cock_img { display: block; width: 180rpx; height: 180rpx; margin: auto;}
+.body_tool { margin-top: 30rpx; text-align: center;}
+.body_tool .g_fff { display: inline-block; vertical-align: middle; padding-left: 100rpx; font-size: 40rpx;}
+.body_tool .tool_img { display: inline-block; vertical-align: middle; width: 120rpx; height: 120rpx;}
+
+.footer { display: flex; align-items: center; justify-content: space-between; height: 80rpx; padding: 30rpx 30rpx;}
+.footer_invite { height: 70rpx; line-height: 70rpx; background: #fff; border-radius: 5rpx; padding: 0 16rpx; text-align: center; font-size: 30rpx; color: #333;}
+.footer_rule { text-align: center; text-decoration: underline;}
+.footer_music { position: relative;overflow:hidden; width: 70rpx; height: 70rpx; text-align: center;}
+.footer_music image { vertical-align: top; width: 100%; height: 100%;}
+.footer_music .audio { position: absolute; right: 0; top: 0; width: 100%; height: 100%;z-index: 2; opacity: 0;}
+
+
+
+
+
+
+
+
+

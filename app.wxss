@@ -1,10 +1,13 @@
 /**app.wxss**/
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-} 
+.g_333 { color: #333;}
+.g_fff { color: #fff;}
+
+.g_f24 { font-size: 24rpx;}
+.g_f26 { font-size: 26rpx;}
+.g_f28 { font-size: 28rpx;}
+.g_f30 { font-size: 30rpx;}
+.g_f32 { font-size: 32rpx;}
+.g_f34 { font-size: 34rpx;}
+.g_f36 { font-size: 36rpx;}
+
+.g_mr20 { margin-right: 20rpx;}
