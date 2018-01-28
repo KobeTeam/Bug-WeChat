@@ -6,9 +6,19 @@
     "pages/giftExch/giftExch"
   ],
   "window": {
-    "backgroundTextStyle": "light",
+    "navigationBarTitleText":"小强",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
-  }
+    "navigationBarTextStyle": "black",
+    "navigationStyle":"default",
+    "backgroundColor":"#000",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh":false
+  },
+  "networkTimeout":{
+    "request": 10000,
+    "connectSocket":10000,
+    "uploadFile":10000,
+    "downloadFile": 10000
+  },
+  "debug":true
 }

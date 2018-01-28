@@ -1,13 +1,28 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class='page'><!-- 整页 -->
+  <view class='head'><!-- 头部 -->
+    <image></image><!--用户头像-->
+    <text></text><!--喷雾剂个数-->
+    <image></image><!--喷雾剂-->
+    <image></image><!--赠送喷雾剂-->
+    <image></image><!--礼物图标-->
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class='body'><!-- 中间区域 -->
+    <view><!--选择小强 多个循环-->
+      <text></text><!--得到分数-->
+      <image></image><!--小强图片-->
+      <view>
+        <text></text><!--需要喷雾剂数目-->
+        <image></image><!--喷雾剂图标-->
+      </view>
+    </view>
+    <view>
+      <image></image><!--引导按钮-->
+      <image></image><!--喷雾剂图标-->
+    </view><!--喷雾剂-->
+  </view>
+  <view class='bottom'><!-- 底部 -->
+    <view></view><!--邀请按钮-->
+    <text></text><!--查看赛季排行榜-->
+    <view></view><!--声音开关-->
   </view>
 </view>

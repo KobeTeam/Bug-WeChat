@@ -1,6 +1,9 @@
 //app.js
 App({
-  onLaunch: function () {
+  globalData: {
+    userInfo: null
+  },
+  onLaunch: function (opt) {//初始化函数
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -33,7 +36,11 @@ App({
       }
     })
   },
-  globalData: {
-    userInfo: null
+  onShow: function (opt){//展示程序回调
+  },
+  onHide: function () {//隐藏程序回调
+  },
+  onError: function (msg) {//错误回调
+    console.log(msg)
   }
 })
