@@ -1,6 +1,11 @@
 // pages/giftExch/giftExch.js
 // 礼品兑换页面
 
+//获取公共方法
+var common = require('../../utils/common.js')
+//获取应用实例
+const app = getApp()
+
 Page({
 
   /**

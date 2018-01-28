@@ -1,5 +1,11 @@
 // pages/gift/gift.js
 // 礼品页面
+
+//获取公共方法
+var common = require('../../utils/common.js')
+//获取应用实例
+const app = getApp()
+
 Page({
 
   /**
@@ -63,5 +69,11 @@ Page({
    */
   onShareAppMessage: function () {
   
-  }
+  },
+
+  /**
+   * 邀请按钮
+   */
+  bindInvite: common.bindInvite()
+
 })

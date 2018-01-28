@@ -1,8 +1,24 @@
 //app.js
 App({
   globalData: {
-    userInfo: null
+    userInfo: null,
+    spray: 0, //喷雾剂
+    config:{}, //用户配置
+    bugs:[], //小强配置
+    nowBug:1, //当前第几支小强
+    newScore: 0, //当前/最后一句分数
+    score: 0 //累计分数
   },
+  onLaunch: function (opt) {//初始化函数
+  },
+  onShow: function (opt){//展示程序回调
+  },
+  onHide: function () {//隐藏程序回调
+  },
+  onError: function (msg) {//错误回调
+    console.log(msg)
+  }
+  /**
   onLaunch: function (opt) {//初始化函数
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -35,12 +51,6 @@ App({
         }
       }
     })
-  },
-  onShow: function (opt){//展示程序回调
-  },
-  onHide: function () {//隐藏程序回调
-  },
-  onError: function (msg) {//错误回调
-    console.log(msg)
   }
+   */
 })

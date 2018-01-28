@@ -1,2 +1,17 @@
-<!--pages/giftExch/giftExch.wxml-->
-<text>pages/giftExch/giftExch.wxml</text>
+<!--礼品兑换页面-->
+<view class='page'><!-- 整页 -->
+  <view class='head'><!-- 头部 -->
+    <text></text><!-- 兑换说明 -->
+  </view>
+  <view class='body'><!-- 中间区域 -->
+    <view><!-- 礼品行 循环 -->
+      <image></image><!--礼品图-->
+      <text></text><!--分数-->
+      <text></text><!--时间-->
+      <text></text><!--描述-->
+    </view>
+  </view>
+  <view class='bottom'><!-- 底部 -->
+    <button></button><!--返回礼物页-->
+  </view>
+</view>

@@ -1,2 +1,27 @@
-<!--pages/gift/gift.wxml-->
-<text>pages/gift/gift.wxml</text>
+<!--礼品页面-->
+<view class='page'><!-- 整页 -->
+  <view class='head'><!-- 头部 -->
+    <text></text><!-- 分数 -->
+    <text></text><!-- 分数说明 -->
+    <text></text><!-- 查看赛季排名榜 -->
+  </view>
+  <view class='body'><!-- 中间区域 -->
+    <view><!-- 礼品行 循环 -->
+      <view><!--礼品左-->
+        <image></image><!--礼品图-->
+        <text></text><!--礼品说明-->
+        <text></text><!--礼品分数-->
+      </view>
+      <view><!--礼品右-->
+        <image></image><!--礼品图-->
+        <text></text><!--礼品说明-->
+        <text></text><!--礼品分数-->
+      </view>
+    </view>
+  </view>
+  <view class='bottom'><!-- 底部 -->
+    <view></view><!--邀请按钮-->
+    <button></button><!--返回主页-->
+    <view></view><!--兑换记录-->
+  </view>
+</view>
