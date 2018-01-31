@@ -1,19 +1,19 @@
 <view class='container'><!-- 整页 -->
   <image src='../../res/img/P007-1.jpg' class="page_bg"></image>
   <view class='head'><!-- 头部 -->
-    <image src='../../res/img/T001.png' class="head_user"></image><!--用户头像-->
+    <image src="{{userInfo.avatarUrl?userInfo.avatarUrl:'../../res/img/T001.png'}}" class="head_user"></image><!--用户头像-->
     <view class='head_mid'>
-      <text class='g_f32 g_fff g_mr20'>31</text><!--喷雾剂个数-->
+      <text class='g_f32 g_fff g_mr20'>{{spray}}</text><!--喷雾剂个数-->
       <image src='../../res/img/P002.png' class='mid_tool'></image><!--喷雾剂-->
-      <image src='../../res/img/P003.png' class='mid_icon'></image><!--赠送喷雾剂-->
+      <image src='../../res/img/P003.png' class='mid_icon' bind:tap="bindGiveAway"></image><!--赠送喷雾剂-->
     </view>
-    <image src='../../res/img/P004.png' class='head_gift'></image><!--礼物图标-->
+    <image src='../../res/img/P004.png' class='head_gift' bind:tap="bindGift"></image><!--礼物图标-->
   </view>
 
   <view class='body'><!-- 中间区域 -->
     <view class='body_cock'><!--选择小强 多个循环-->
       <text class='cock_num g_fff'>40</text><!--得到分数-->
-      <image src='../../res/img/bug/P101_1.png' class='cock_img'></image><!--小强图片-->
+      <image src='../../res/img/bug/P101_1.png' class='cock_img' bind:tap="bindStartGame"></image><!--小强图片-->
     </view>
     <view class='body_tool'>
       <text class='g_fff'>3</text>
@@ -23,9 +23,9 @@
 
   <view class='footer'><!-- 底部 -->
     <view class='footer_invite'>邀请好友</view><!--邀请按钮-->
-    <view class='footer_rule g_fff g_f32'>查看赛季排行榜</view><!--查看赛季排行榜-->
+    <view class='footer_rule g_fff g_f32' bind:tap="bindScore">查看赛季排行榜</view><!--查看赛季排行榜-->
     <view class='footer_music'>
-      <image src='../../res/img/C002-1.png'></image>
+      <image src='../../res/img/C002-1.png' bind:tap="bindSound"></image>
       <audio name="bgMusic" src="../../res/audio/audio.mp3" id="myAudio" controls loop class='audio'></audio>
     </view><!--声音开关-->
   </view>
