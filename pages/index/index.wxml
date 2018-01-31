@@ -30,3 +30,10 @@
     </view><!--声音开关-->
   </view>
 </view>
+
+<!-- 遮罩层阴影 -->
+<view class='g_maskbg'></view>
+
+<!-- 赛季排行榜 -->
+<view class='rule_wrapper'>
+</view>
