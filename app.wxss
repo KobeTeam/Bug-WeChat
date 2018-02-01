@@ -1,7 +1,15 @@
 /**app.wxss**/
-.g_333 { color: #333;}
 .g_fff { color: #fff;}
+.g_333 { color: #333;}
+.g_666 { color: #666;}
 
+
+.g_f12 { font-size: 12rpx;}
+.g_f14 { font-size: 14rpx;}
+.g_f16 { font-size: 16rpx;}
+.g_f18 { font-size: 18rpx;}
+.g_f20 { font-size: 20rpx;}
+.g_f22 { font-size: 22rpx;}
 .g_f24 { font-size: 24rpx;}
 .g_f26 { font-size: 26rpx;}
 .g_f28 { font-size: 28rpx;}
@@ -12,7 +20,19 @@
 
 .g_mr20 { margin-right: 20rpx;}
 
-.g_maskbg { position: fixed; left: 0; top: 0; z-index: 99; width: 100%; height: 100%;
+
+.g_mb10 { margin-bottom: 10rpx;}
+.g_mb20 { margin-bottom: 20rpx;}
+
+
+
+.g_pl20 { padding-left: 20rpx;}
+
+
+
+.g_p30 { padding: 30rpx;}
+
+.g_mask_bg { position: fixed; left: 0; top: 0; z-index: 99; width: 100%; height: 100%;
  background: rgba(0, 0, 0, .6);}
 
 

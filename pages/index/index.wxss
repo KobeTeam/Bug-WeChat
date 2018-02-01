@@ -7,7 +7,8 @@ page,
 .head { display: flex; align-items: center; justify-content: space-between; height: 80rpx; padding: 35rpx 30rpx;}
 .head_user { width: 80rpx; height: 80rpx; border-radius: 50%;}
 .head_gift { width: 80rpx; height: 80rpx;}
-.head_mid { display: flex; align-items: center; justify-content: center; width: -webkit-calc(100% - 160rpx); width: calc(100% - 160rpx);}
+.head_mid { width: -webkit-calc(100% - 160rpx); width: calc(100% - 160rpx);}
+.head_mid .mid_row { display: flex; align-items: center; justify-content: center;}
 .head_mid .mid_tool { width: 60rpx; height: 60rpx; margin-right: 40rpx;}
 .head_mid .mid_icon { width: 60rpx; height: 60rpx;}
 
@@ -26,11 +27,13 @@ page,
 .footer_music image { vertical-align: top; width: 100%; height: 100%;}
 .footer_music .audio { position: absolute; right: 0; top: 0; width: 100%; height: 100%;z-index: 2; opacity: 0;}
 
-.rule_wrapper { }
+.luck_wrapper { position: absolute; left: 50%; top: 50%; z-index: 100; width: 65%;
+background: #fff; border-radius: 10rpx; -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%);}
+.luck_title { line-height: 1.5; margin-bottom: 20rpx; text-align: center;}
+.luck_btn { width: 100%; height: 80rpx; line-height: 80rpx; border-top: 1rpx solid #e1e1e1; text-align: center; border-radius: 0; background: transparent; padding: 0;}
+.luck_btn::after { border: none;}
 
-
-
-
-
+.luck_pop { position: fixed; left: 50%; top: 50%; z-index: 100; width: 20%;
+background: rgba(0, 0, 0, .85); border-radius: 10rpx; -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%); text-align: center;}
 
 

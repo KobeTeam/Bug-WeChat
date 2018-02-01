@@ -3,9 +3,16 @@
   <view class='head'><!-- 头部 -->
     <image src="{{userInfo.avatarUrl?userInfo.avatarUrl:'../../res/img/T001.png'}}" class="head_user"></image><!--用户头像-->
     <view class='head_mid'>
-      <text class='g_f32 g_fff g_mr20'>{{spray}}</text><!--喷雾剂个数-->
-      <image src='../../res/img/P002.png' class='mid_tool'></image><!--喷雾剂-->
-      <image src='../../res/img/P003.png' class='mid_icon' bind:tap="bindGiveAway"></image><!--赠送喷雾剂-->
+      <view class='mid_row'>
+        <text class='g_f32 g_fff g_mr20'>{{spray}}</text><!--喷雾剂个数-->
+        <image src='../../res/img/P002.png' class='mid_tool'></image><!--喷雾剂-->
+        <image src='../../res/img/P003.png' class='mid_icon' bind:tap="bindGiveAway"></image><!--赠送喷雾剂-->
+      </view>
+      
+      <view class='mid_row'>
+        <text class='g_f32 g_fff g_mr20'>21</text><!--幸运值-->
+        <image src='../../res/img/P002.png' class='mid_tool'></image><!--幸运值-->
+      </view>
     </view>
     <image src='../../res/img/P004.png' class='head_gift' bind:tap="bindGift"></image><!--礼物图标-->
   </view>
@@ -32,8 +39,25 @@
 </view>
 
 <!-- 遮罩层阴影 -->
-<view class='g_maskbg'></view>
+<view class='g_mask_bg' hidden='false'></view>
 
-<!-- 赛季排行榜 -->
-<view class='rule_wrapper'>
+<!-- 幸运值说明 -->
+<view class='luck_wrapper' hidden='false'>
+  <view class='g_p30'>
+    <view class='luck_title g_333 g_f34'>幸运值</view>
+    <view class='luck_title g_333 g_f36'>+5</view>
+    <view class='luck_title g_333 g_f32'>将会提升成功几率(100满)</view>
+    <view class='g_666 g_f28 g_mb10'>获得方式: </view>
+    <view class='g_666 g_f24 g_mb10 g_pl20'>每日签到 +10</view>
+    <view class='g_666 g_f24 g_mb10 g_pl20'>游戏失败 随机 2 - 5</view>
+    <view class='g_666 g_f24 g_mb10 g_pl20'>每日邀请 随机 2 - 5</view>
+    <view class='g_666 g_f24 g_pl20'>邀请登陆 +5（最高15/日）</view>
+  </view>
+  <button class='luck_btn g_f30 g_333'>知道啦</button>
+</view>
+
+<!-- 幸运值小弹窗 -->
+<view class='luck_pop g_p30' hidden='false'>
+  <view class='g_fff g_30 g_mb20'>幸运值</view>
+  <view class='g_fff g_30'>+5</view>
 </view>
